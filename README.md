@@ -22,7 +22,9 @@ Modern browsers have strong security features that can prevent creating JavaScri
 
 First, copy the entire line of code below to your clipboard. This is the heart of our tool.
 
+```
 (javascript:(function(){const checkboxes=document.querySelectorAll('input[type="checkbox"]');let count=0;checkboxes.forEach(checkbox=>{if(checkbox.checked){checkbox.checked=false;count++;}});alert(`${count} checkboxes have been unchecked.`);})())
+```
 
 
 **Step 2: Open the Bookmark Manager**
