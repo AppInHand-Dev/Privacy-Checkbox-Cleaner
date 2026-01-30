@@ -14,16 +14,32 @@ A simple one-click bookmarklet that instantly unchecks every checkbox on the pag
 
 ---
 
-### 🚀 How to Install
+### 🚀 How to Install (The Modern Chrome & Firefox Method)
 
-**1. Show your Bookmarks Bar:**
-   - In most browsers, press `Ctrl+Shift+B` (or `Cmd+Shift+B` on Mac).
+Modern browsers have strong security features that can prevent creating JavaScript-based bookmarks (bookmarklets) easily. This manual method uses the browser's Bookmark Manager to install it correctly.
 
-**2. Drag this link to your Bookmarks Bar:**
+**Step 1: Copy the Bookmarklet Code**
 
-[Uncheck All ☑️](javascript:(function(){const checkboxes=document.querySelectorAll('input[type="checkbox"]');let count=0;checkboxes.forEach(checkbox=>{if(checkbox.checked){checkbox.checked=false;count++;}});alert(`${count} checkboxes have been unchecked.`);})())
+First, copy the entire line of code below to your clipboard. This is the heart of our tool.
 
-That's it! Now, when you're on a page with annoying checkboxes, just click "Uncheck All ☑️" in your bookmarks bar.
+(javascript:(function(){const checkboxes=document.querySelectorAll('input[type="checkbox"]');let count=0;checkboxes.forEach(checkbox=>{if(checkbox.checked){checkbox.checked=false;count++;}});alert(`${count} checkboxes have been unchecked.`);})())
+
+
+**Step 2: Open the Bookmark Manager**
+
+1.  In your browser, press `Ctrl+Shift+O` (or `Cmd+Shift+O` on Mac).
+2.  This will open the "Bookmark Manager" in a new tab.
+
+**Step 3: Create the New Bookmark**
+
+1.  On the left side, make sure you have selected the **"Bookmarks Bar"** folder (or "Barra dei preferiti").
+2.  Find an empty space on the right side, **right-click**, and select **"Add new bookmark"** (or "Aggiungi nuovo preferito").
+3.  A dialog box will appear.
+    *   In the **"Name"** field, type: `Uncheck All ☑️`
+    *   In the **"URL"** field, **paste the code** you copied in Step 1.
+4.  Click **"Save"**.
+
+That's it! The "Uncheck All ☑️" button will now appear on your bookmarks bar, ready to use.
 
 ---
 
